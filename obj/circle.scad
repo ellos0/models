@@ -7,5 +7,6 @@ for (i=[0:step:359]) {
     dx = r*cos(angle);
     dy = r*sin(angle);
     translate([dx,dy,0])
+      rotate([0,0,i])
       cube(b, center=true);
 }
